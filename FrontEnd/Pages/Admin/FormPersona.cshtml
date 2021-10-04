@@ -1,0 +1,85 @@
+﻿@page
+@model MyApp.Namespace.FormPersonaModel
+@{
+    ViewData["Title"] = "Admin Persona";
+}
+    <form class="row g-3 formularioDatos" id="FormTecnico">
+        <div class="col-md-4">
+            <label for="TipoPersona" class="form-label">Tipo de Persona</label>
+            <select class="form-select" id="TipoPersona" required>
+                <option selected disabled value="">Seleccionar...</option>
+                <option value="Tecnico">Técnico de Mantenimiento</option>
+                <option value="PersonaSeg">Personal de seguridad</option>
+                <option value="Usuario">Usuario</option>
+            </select>
+        </div>
+        <div class="col-md-8"></div>
+        <div class="col-md-4">
+            <label for="Nombre" class="form-label">Nombre(s)</label>
+            <input type="text" class="form-control" id="Nombre" required>
+        </div>
+        <div class="col-md-4">
+            <label for="Apellido" class="form-label">Apellido(s)</label>
+            <input type="text" class="form-control" id="Apellido" required>
+        </div>
+        <div class="col-md-4">
+            <label for="Identificacion" class="form-label">Número Identificación</label>
+            <input type="text" class="form-control" id="Identificacion" required>
+        </div>
+
+        <div class="col-md-8">
+            <label for="Correo" class="form-label">Correo Electrónico</label>
+            <input type="email" class="form-control" id="Correo"
+                aria-describedby="emailHelp" required>
+            <div id="emailHelp" class="form-text">Nunca compartiremos su correo electrónico con nadie más.</div>
+        </div>
+        <div class="col-md-4">
+            <label for="Genero" class="form-label">Genero</label>
+            <select class="form-select" id="Genero" required>
+                <option selected disabled value="">Seleccionar...</option>
+                <option value="Femenino">Femenino</option>
+                <option value="Masculino">Masculino</option>
+                <option value="Otro">Otro</option>
+            </select>
+        </div>
+        
+        <div class="col-md-4">
+            <label for="FechaIngreso" class="form-label">Fecha de Ingreso</label>
+            <input type="date" class="form-control" id="FechaIngreso" required>
+        </div>
+        <div class="col-md-4 oculto" >
+            <label for="Cargo" class="form-label">Cargo</label>
+            <input type="text" class="form-control" id="Cargo" required>
+        </div>
+        <div class="col-md-4 oculto" >
+            <label for="Turno" class="form-label">Turno</label>
+            <select class="form-select" id="Turno" required>
+                <option selected disabled value="">Seleccionar...</option>
+                <option value="Turno 1">Turno 1</option>
+                <option value="Turno 2">Turno 2</option>
+                <option value="Turno 3">Turno 3</option>
+            </select>
+        </div>
+        <div class="col-md-3">
+            <label for="EstadoTecnico" class="form-label">Estado</label>
+            <select class="form-select" id="EstadoTecnico" required>
+                <option selected disabled value="">Seleccionar...</option>
+                <option value="A">Activo</option>
+                <option value="I">Inactivo</option>
+                <option value="C">Cesante</option>
+            </select>
+        </div>
+        <div class="col-md-1">
+            <label for="IDTecnico" class="form-label">ID</label>
+            <input type="text" class="form-control" id="IDTecnico" required>
+        </div>
+        
+        <div class="col-12 botones">
+            <button class="btn btn-outline-success" type="submit" id="btnCrearTecnico">CREAR</button>
+            <button class="btn btn-outline-success" type="submit" id="btnActualizarTecnico">ACTUALIZAR</button>
+            <button class="btn btn-outline-success" type="submit" id="btnBorrarTecnico">BUSCAR</button>
+            <button class="btn btn-outline-success" type="submit" id="btnBorrarTecnico">ELIMINAR</button>
+            <button class="btn btn-outline-success" type="reset">LIMPIAR</button>
+            <a class="btn btn-outline-success" href="/Index" role="button">VOLVER A INICIO</a>
+        </div>
+    </form>

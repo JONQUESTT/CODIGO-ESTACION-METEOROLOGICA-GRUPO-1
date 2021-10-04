@@ -1,0 +1,14 @@
+﻿.encabezado{
+  text-align: center;
+}
+.bloque{
+  margin: auto;
+  margin-top: 1%;
+}
+.row-carrusel{
+  --bs-gutter-x: 140.5rem;
+}
+.formularioDatos{
+  width: 80%;
+  margin: auto;
+}
