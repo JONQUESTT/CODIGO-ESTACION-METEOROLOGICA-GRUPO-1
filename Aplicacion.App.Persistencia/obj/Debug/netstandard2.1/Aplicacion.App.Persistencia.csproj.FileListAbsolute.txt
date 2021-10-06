@@ -10,3 +10,15 @@ C:\Catalina\Aplicacion1\Aplicacion.App\Aplicacion.App.Persistencia\bin\Debug\net
 C:\Catalina\Aplicacion1\Aplicacion.App\Aplicacion.App.Persistencia\obj\Debug\netstandard2.1\Aplicacion.App.Persistencia.csproj.CopyComplete
 C:\Catalina\Aplicacion1\Aplicacion.App\Aplicacion.App.Persistencia\obj\Debug\netstandard2.1\Aplicacion.App.Persistencia.dll
 C:\Catalina\Aplicacion1\Aplicacion.App\Aplicacion.App.Persistencia\obj\Debug\netstandard2.1\Aplicacion.App.Persistencia.pdb
+C:\Users\JohnIgnacio\Downloads\mision tic\progrmacion\PCICLO3\Nueva carpeta\Aplicacion2\Aplicacion.App\Aplicacion.App.Persistencia\bin\Debug\netstandard2.1\Aplicacion.App.Persistencia.deps.json
+C:\Users\JohnIgnacio\Downloads\mision tic\progrmacion\PCICLO3\Nueva carpeta\Aplicacion2\Aplicacion.App\Aplicacion.App.Persistencia\bin\Debug\netstandard2.1\Aplicacion.App.Persistencia.dll
+C:\Users\JohnIgnacio\Downloads\mision tic\progrmacion\PCICLO3\Nueva carpeta\Aplicacion2\Aplicacion.App\Aplicacion.App.Persistencia\bin\Debug\netstandard2.1\Aplicacion.App.Persistencia.pdb
+C:\Users\JohnIgnacio\Downloads\mision tic\progrmacion\PCICLO3\Nueva carpeta\Aplicacion2\Aplicacion.App\Aplicacion.App.Persistencia\bin\Debug\netstandard2.1\Aplicacion.App.Dominio.dll
+C:\Users\JohnIgnacio\Downloads\mision tic\progrmacion\PCICLO3\Nueva carpeta\Aplicacion2\Aplicacion.App\Aplicacion.App.Persistencia\bin\Debug\netstandard2.1\Aplicacion.App.Dominio.pdb
+C:\Users\JohnIgnacio\Downloads\mision tic\progrmacion\PCICLO3\Nueva carpeta\Aplicacion2\Aplicacion.App\Aplicacion.App.Persistencia\obj\Debug\netstandard2.1\Aplicacion.App.Persistencia.csprojAssemblyReference.cache
+C:\Users\JohnIgnacio\Downloads\mision tic\progrmacion\PCICLO3\Nueva carpeta\Aplicacion2\Aplicacion.App\Aplicacion.App.Persistencia\obj\Debug\netstandard2.1\Aplicacion.App.Persistencia.AssemblyInfoInputs.cache
+C:\Users\JohnIgnacio\Downloads\mision tic\progrmacion\PCICLO3\Nueva carpeta\Aplicacion2\Aplicacion.App\Aplicacion.App.Persistencia\obj\Debug\netstandard2.1\Aplicacion.App.Persistencia.AssemblyInfo.cs
+C:\Users\JohnIgnacio\Downloads\mision tic\progrmacion\PCICLO3\Nueva carpeta\Aplicacion2\Aplicacion.App\Aplicacion.App.Persistencia\obj\Debug\netstandard2.1\Aplicacion.App.Persistencia.csproj.CoreCompileInputs.cache
+C:\Users\JohnIgnacio\Downloads\mision tic\progrmacion\PCICLO3\Nueva carpeta\Aplicacion2\Aplicacion.App\Aplicacion.App.Persistencia\obj\Debug\netstandard2.1\Aplicacion.App.Persistencia.csproj.CopyComplete
+C:\Users\JohnIgnacio\Downloads\mision tic\progrmacion\PCICLO3\Nueva carpeta\Aplicacion2\Aplicacion.App\Aplicacion.App.Persistencia\obj\Debug\netstandard2.1\Aplicacion.App.Persistencia.dll
+C:\Users\JohnIgnacio\Downloads\mision tic\progrmacion\PCICLO3\Nueva carpeta\Aplicacion2\Aplicacion.App\Aplicacion.App.Persistencia\obj\Debug\netstandard2.1\Aplicacion.App.Persistencia.pdb

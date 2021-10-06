@@ -7,3 +7,12 @@ C:\Catalina\Aplicacion1\Aplicacion.App\Aplicacion.App.Dominio\obj\Debug\netstand
 C:\Catalina\Aplicacion1\Aplicacion.App\Aplicacion.App.Dominio\obj\Debug\netstandard2.0\Aplicacion.App.Dominio.csproj.CoreCompileInputs.cache
 C:\Catalina\Aplicacion1\Aplicacion.App\Aplicacion.App.Dominio\obj\Debug\netstandard2.0\Aplicacion.App.Dominio.dll
 C:\Catalina\Aplicacion1\Aplicacion.App\Aplicacion.App.Dominio\obj\Debug\netstandard2.0\Aplicacion.App.Dominio.pdb
+C:\Users\JohnIgnacio\Downloads\mision tic\progrmacion\PCICLO3\Nueva carpeta\Aplicacion2\Aplicacion.App\Aplicacion.App.Dominio\bin\Debug\netstandard2.0\Aplicacion.App.Dominio.deps.json
+C:\Users\JohnIgnacio\Downloads\mision tic\progrmacion\PCICLO3\Nueva carpeta\Aplicacion2\Aplicacion.App\Aplicacion.App.Dominio\bin\Debug\netstandard2.0\Aplicacion.App.Dominio.dll
+C:\Users\JohnIgnacio\Downloads\mision tic\progrmacion\PCICLO3\Nueva carpeta\Aplicacion2\Aplicacion.App\Aplicacion.App.Dominio\bin\Debug\netstandard2.0\Aplicacion.App.Dominio.pdb
+C:\Users\JohnIgnacio\Downloads\mision tic\progrmacion\PCICLO3\Nueva carpeta\Aplicacion2\Aplicacion.App\Aplicacion.App.Dominio\obj\Debug\netstandard2.0\Aplicacion.App.Dominio.csprojAssemblyReference.cache
+C:\Users\JohnIgnacio\Downloads\mision tic\progrmacion\PCICLO3\Nueva carpeta\Aplicacion2\Aplicacion.App\Aplicacion.App.Dominio\obj\Debug\netstandard2.0\Aplicacion.App.Dominio.AssemblyInfoInputs.cache
+C:\Users\JohnIgnacio\Downloads\mision tic\progrmacion\PCICLO3\Nueva carpeta\Aplicacion2\Aplicacion.App\Aplicacion.App.Dominio\obj\Debug\netstandard2.0\Aplicacion.App.Dominio.AssemblyInfo.cs
+C:\Users\JohnIgnacio\Downloads\mision tic\progrmacion\PCICLO3\Nueva carpeta\Aplicacion2\Aplicacion.App\Aplicacion.App.Dominio\obj\Debug\netstandard2.0\Aplicacion.App.Dominio.csproj.CoreCompileInputs.cache
+C:\Users\JohnIgnacio\Downloads\mision tic\progrmacion\PCICLO3\Nueva carpeta\Aplicacion2\Aplicacion.App\Aplicacion.App.Dominio\obj\Debug\netstandard2.0\Aplicacion.App.Dominio.dll
+C:\Users\JohnIgnacio\Downloads\mision tic\progrmacion\PCICLO3\Nueva carpeta\Aplicacion2\Aplicacion.App\Aplicacion.App.Dominio\obj\Debug\netstandard2.0\Aplicacion.App.Dominio.pdb

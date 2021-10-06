@@ -9,6 +9,7 @@ using Microsoft.Extensions.Logging;
 using Aplicacion.App.Dominio;
 using Aplicacion.App.Persistencia;
 
+
 namespace FrontEnd
 {
     public class Program
@@ -25,8 +26,8 @@ namespace FrontEnd
             var p=new Persona
             {
                 Identificacion="1234",
-                Nombre="Ana",
-                Apellido="Arcos",
+                Nombres="Ana",
+                Apellidos="Arcos",
                 Genero="Femenino",
 		        Estado= 'A'
         };
