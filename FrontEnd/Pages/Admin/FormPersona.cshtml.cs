@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Aplicacion.App.Dominio;
-using Aplicacion.App.Persistencia:
+using Aplicacion.App.Persistencia;
 
 namespace MyApp.Namespace
 {

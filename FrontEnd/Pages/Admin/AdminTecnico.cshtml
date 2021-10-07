@@ -4,14 +4,11 @@
     ViewData["Title"] = "Personas";
 }
 <h1 class="display-6 oculto encabezado" id="TituloTecnico">TÉCNICOS DE MANTENIMIENTO</h1><br>
-<!--
-<h1 class="display-6 oculto encabezado" id="TituloPerSeg">PERSONAL DE SEGURIDAD</h1><br>
-<h1 class="display-6 oculto encabezado" id="TituloUsuarios">USUARIOS</h1><br>
--->
 <br>
 <div class="container bloque bloque_list">
     <div class="row">
         <div class="col-4">
+            <!--
             <div class="col-md-12">
                 <label for="TipoPersona" class="form-label">Tipo de Persona</label>
                 <select class="form-select" id="TipoPersona" required>
@@ -22,6 +19,7 @@
                 </select>
             </div>
             <br>
+            -->
             <div class="col-md-12">
                 <form class="d-flex">
                     <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
@@ -37,7 +35,7 @@
 
         </div>
         <div class="col-8">
-            <table class="table table-hover">
+            <table class="table table-hover" id="tablaTecnicoMto">
                 <thead>
                     <tr>
                         <th scope="col">ID</th>

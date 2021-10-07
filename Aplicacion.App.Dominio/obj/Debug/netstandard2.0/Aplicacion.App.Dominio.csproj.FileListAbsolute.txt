@@ -16,3 +16,12 @@ C:\Users\JohnIgnacio\Downloads\mision tic\progrmacion\PCICLO3\Nueva carpeta\Apli
 C:\Users\JohnIgnacio\Downloads\mision tic\progrmacion\PCICLO3\Nueva carpeta\Aplicacion2\Aplicacion.App\Aplicacion.App.Dominio\obj\Debug\netstandard2.0\Aplicacion.App.Dominio.csproj.CoreCompileInputs.cache
 C:\Users\JohnIgnacio\Downloads\mision tic\progrmacion\PCICLO3\Nueva carpeta\Aplicacion2\Aplicacion.App\Aplicacion.App.Dominio\obj\Debug\netstandard2.0\Aplicacion.App.Dominio.dll
 C:\Users\JohnIgnacio\Downloads\mision tic\progrmacion\PCICLO3\Nueva carpeta\Aplicacion2\Aplicacion.App\Aplicacion.App.Dominio\obj\Debug\netstandard2.0\Aplicacion.App.Dominio.pdb
+C:\Users\Equipo\Documents\GitHub\CODIGO-ESTACION-METEOROLOGICA-GRUPO-1\Aplicacion.App.Dominio\bin\Debug\netstandard2.0\Aplicacion.App.Dominio.deps.json
+C:\Users\Equipo\Documents\GitHub\CODIGO-ESTACION-METEOROLOGICA-GRUPO-1\Aplicacion.App.Dominio\bin\Debug\netstandard2.0\Aplicacion.App.Dominio.dll
+C:\Users\Equipo\Documents\GitHub\CODIGO-ESTACION-METEOROLOGICA-GRUPO-1\Aplicacion.App.Dominio\bin\Debug\netstandard2.0\Aplicacion.App.Dominio.pdb
+C:\Users\Equipo\Documents\GitHub\CODIGO-ESTACION-METEOROLOGICA-GRUPO-1\Aplicacion.App.Dominio\obj\Debug\netstandard2.0\Aplicacion.App.Dominio.csprojAssemblyReference.cache
+C:\Users\Equipo\Documents\GitHub\CODIGO-ESTACION-METEOROLOGICA-GRUPO-1\Aplicacion.App.Dominio\obj\Debug\netstandard2.0\Aplicacion.App.Dominio.AssemblyInfoInputs.cache
+C:\Users\Equipo\Documents\GitHub\CODIGO-ESTACION-METEOROLOGICA-GRUPO-1\Aplicacion.App.Dominio\obj\Debug\netstandard2.0\Aplicacion.App.Dominio.AssemblyInfo.cs
+C:\Users\Equipo\Documents\GitHub\CODIGO-ESTACION-METEOROLOGICA-GRUPO-1\Aplicacion.App.Dominio\obj\Debug\netstandard2.0\Aplicacion.App.Dominio.csproj.CoreCompileInputs.cache
+C:\Users\Equipo\Documents\GitHub\CODIGO-ESTACION-METEOROLOGICA-GRUPO-1\Aplicacion.App.Dominio\obj\Debug\netstandard2.0\Aplicacion.App.Dominio.dll
+C:\Users\Equipo\Documents\GitHub\CODIGO-ESTACION-METEOROLOGICA-GRUPO-1\Aplicacion.App.Dominio\obj\Debug\netstandard2.0\Aplicacion.App.Dominio.pdb

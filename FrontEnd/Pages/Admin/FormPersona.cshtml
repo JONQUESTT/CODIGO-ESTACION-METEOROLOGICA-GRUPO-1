@@ -3,6 +3,7 @@
 @{
     ViewData["Title"] = "Admin Persona";
 }
+<h1 class="display-6 oculto encabezado" id="TituloFormPersona">FORMULARIO PERSONA</h1><br>
 <form class="row g-3 formularioDatos" id="formTecnico" name="formTecnico">
     <div class="col-md-4">
         <label for="TipoPersona" class="form-label">Tipo de Persona</label>
@@ -75,10 +76,10 @@
     </div>
 
     <div class="col-12 botones">
-        <button class="btn btn-outline-success" type="submit" id="btnCrearTecnico">CREAR</button>
-        <button class="btn btn-outline-success" type="submit" id="btnActualizarTecnico">ACTUALIZAR</button>
-        <button class="btn btn-outline-success" type="submit" id="btnBorrarTecnico">BUSCAR</button>
-        <button class="btn btn-outline-success" type="submit" id="btnBorrarTecnico">ELIMINAR</button>
+        <button class="btn btn-outline-success" type="submit" id="btnCrearTecnico" name="btnCrearTecnico">CREAR</button>
+        <button class="btn btn-outline-success" type="submit" id="btnActualizarTecnico" name="btnActualizarTecnico">ACTUALIZAR</button>
+        <button class="btn btn-outline-success" type="submit" id="btnBuscarTecnico" name="btnBuscarTecnico">BUSCAR</button>
+        <button class="btn btn-outline-success" type="submit" id="btnBorrarTecnico" name="btnBorrarTecnico">ELIMINAR</button>
         <button class="btn btn-outline-success" type="reset">LIMPIAR</button>
         <a class="btn btn-outline-success" href="/Index" role="button">VOLVER A INICIO</a>
     </div>

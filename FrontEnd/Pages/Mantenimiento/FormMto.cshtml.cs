@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace MyApp.Namespace
 {
-    public class IngDatosMetModel : PageModel
+    public class FormMtoModel : PageModel
     {
         public void OnGet()
         {

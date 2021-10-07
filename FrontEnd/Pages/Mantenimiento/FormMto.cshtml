@@ -1,0 +1,42 @@
+﻿@page
+@model MyApp.Namespace.FormMtoModel
+@{
+    ViewData["Title"] = "Mantenimiento";
+}
+<h1 class="display-6 oculto encabezado" id="TituloFormMto">FORMULARIO MANTENIMIENTO</h1><br>
+<form class="row g-3 formularioDatos" id="formMto" name="formMto">
+    <div class="col-md-4">
+        <label for="TipoMto" class="form-label">Tipo de Mantenimiento</label>
+        <select class="form-select" id="TipoMto" name="TipoMto" required>
+            <option selected disabled value="">Seleccionar...</option>
+            <option value="Mantenimiento Correctivo">Mantenimiento Correctivo</option>
+            <option value="Mantenimiento Preventivo">Mantenimiento Preventivo</option>
+        </select>
+    </div>
+    <div class="col-md-8"></div>
+    <div class="col-md-4">
+        <label for="CodEstacion" class="form-label">Código Estación</label>
+        <input type="text" class="form-control" id="CodEstacion" name="CodEstacion" required>
+    </div>
+    <div class="col-md-8">
+        <label for="Tecnico" class="form-label">Técnico que realiza mantenimiento</label>
+            <input type="text" class="form-control" id="Tecnico" name="Tecnico" required>
+    </div>
+
+    <div class="col-md-12">
+        <label for="Descripcion" class="form-label">Descripción</label>
+        <input type="text" class="form-control" id="Descripcion" name="Descripcion" required>
+    </div>
+
+    <div class="col-12 botones">
+        <button class="btn btn-outline-success" type="submit" id="btnCrearTecnico" name="btnCrearTecnico">CREAR</button>
+        <button class="btn btn-outline-success" type="submit" id="btnActualizarTecnico"
+            name="btnActualizarTecnico">ACTUALIZAR</button>
+        <button class="btn btn-outline-success" type="submit" id="btnBuscarTecnico"
+            name="btnBuscarTecnico">BUSCAR</button>
+        <button class="btn btn-outline-success" type="submit" id="btnBorrarTecnico"
+            name="btnBorrarTecnico">ELIMINAR</button>
+        <button class="btn btn-outline-success" type="reset">LIMPIAR</button>
+        <a class="btn btn-outline-success" href="/Index" role="button">VOLVER A INICIO</a>
+    </div>
+</form>
