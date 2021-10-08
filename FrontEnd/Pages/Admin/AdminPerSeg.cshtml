@@ -3,4 +3,52 @@
 @{
     ViewData["Title"] = "P. Seguridad";
 }
-<h1>Personal seg</h1>
+<h1 class="display-6 oculto encabezado" id="TituloPerSeg">PERSONAL DE SEGURIDAD</h1><br>
+<br>
+<div class="container bloque bloque_list">
+    <div class="row">
+        <div class="col-4">
+            <div class="col-md-12">
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                    <a class="btn btn-outline-success" href="./FormPersona" role="button">BUSCAR</a>
+                    <!--<button class="btn btn-outline-success" type="submit"><a href="./FormPersona">BUSCAR</a></button>-->
+                </form>
+            </div>
+            <br>
+            <div class="col-md-12 oculto noEncontrado">
+                <div class="form-text">Registro no encontado.</div><br>
+                <a class="btn btn-outline-success" href="./FormPersona" role="button">CREAR</a>
+            </div>
+        </div>
+        <div class="col-8">
+            <table class="table table-hover" id="tablaPerSeg">
+                <thead>
+                    <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">Nombre(s)</th>
+                        <th scope="col">Apellido(s)</th>
+                        <th scope="col">Genero</th>
+                        <th scope="col">Turno</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

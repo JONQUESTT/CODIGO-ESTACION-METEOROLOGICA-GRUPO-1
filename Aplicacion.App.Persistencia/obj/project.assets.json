@@ -7263,19 +7263,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\JohnIgnacio\\.nuget\\packages\\": {}
+    "C:\\Users\\Equipo\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\JohnIgnacio\\Downloads\\mision tic\\progrmacion\\PCICLO3\\Nueva carpeta\\Aplicacion2\\Aplicacion.App\\Aplicacion.App.Persistencia\\Aplicacion.App.Persistencia.csproj",
+      "projectUniqueName": "C:\\Users\\Equipo\\Documents\\GitHub\\CODIGO-ESTACION-METEOROLOGICA-GRUPO-1\\Aplicacion.App.Persistencia\\Aplicacion.App.Persistencia.csproj",
       "projectName": "Aplicacion.App.Persistencia",
-      "projectPath": "C:\\Users\\JohnIgnacio\\Downloads\\mision tic\\progrmacion\\PCICLO3\\Nueva carpeta\\Aplicacion2\\Aplicacion.App\\Aplicacion.App.Persistencia\\Aplicacion.App.Persistencia.csproj",
-      "packagesPath": "C:\\Users\\JohnIgnacio\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\JohnIgnacio\\Downloads\\mision tic\\progrmacion\\PCICLO3\\Nueva carpeta\\Aplicacion2\\Aplicacion.App\\Aplicacion.App.Persistencia\\obj\\",
+      "projectPath": "C:\\Users\\Equipo\\Documents\\GitHub\\CODIGO-ESTACION-METEOROLOGICA-GRUPO-1\\Aplicacion.App.Persistencia\\Aplicacion.App.Persistencia.csproj",
+      "packagesPath": "C:\\Users\\Equipo\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Equipo\\Documents\\GitHub\\CODIGO-ESTACION-METEOROLOGICA-GRUPO-1\\Aplicacion.App.Persistencia\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\JohnIgnacio\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Equipo\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netstandard2.1"
@@ -7286,8 +7286,8 @@
       "frameworks": {
         "netstandard2.1": {
           "projectReferences": {
-            "C:\\Users\\JohnIgnacio\\Downloads\\mision tic\\progrmacion\\PCICLO3\\Nueva carpeta\\Aplicacion2\\Aplicacion.App\\Aplicacion.App.Dominio\\Aplicacion.App.Dominio.csproj": {
-              "projectPath": "C:\\Users\\JohnIgnacio\\Downloads\\mision tic\\progrmacion\\PCICLO3\\Nueva carpeta\\Aplicacion2\\Aplicacion.App\\Aplicacion.App.Dominio\\Aplicacion.App.Dominio.csproj"
+            "C:\\Users\\Equipo\\Documents\\GitHub\\CODIGO-ESTACION-METEOROLOGICA-GRUPO-1\\Aplicacion.App.Dominio\\Aplicacion.App.Dominio.csproj": {
+              "projectPath": "C:\\Users\\Equipo\\Documents\\GitHub\\CODIGO-ESTACION-METEOROLOGICA-GRUPO-1\\Aplicacion.App.Dominio\\Aplicacion.App.Dominio.csproj"
             }
           }
         }
