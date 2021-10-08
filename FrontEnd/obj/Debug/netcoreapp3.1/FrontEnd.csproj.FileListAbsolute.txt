@@ -272,11 +272,6 @@ C:\Users\JohnIgnacio\Downloads\mision tic\progrmacion\PCICLO3\Nueva carpeta\Apli
 C:\Users\JohnIgnacio\Downloads\mision tic\progrmacion\PCICLO3\Nueva carpeta\Aplicacion2\Aplicacion.App\FrontEnd\obj\Debug\netcoreapp3.1\Razor\Pages\Admin\AdminTecnico.cshtml.g.cs
 C:\Users\JohnIgnacio\Downloads\mision tic\progrmacion\PCICLO3\Nueva carpeta\Aplicacion2\Aplicacion.App\FrontEnd\obj\Debug\netcoreapp3.1\Razor\Pages\Admin\FormPersona.cshtml.g.cs
 C:\Users\JohnIgnacio\Downloads\mision tic\progrmacion\PCICLO3\Nueva carpeta\Aplicacion2\Aplicacion.App\FrontEnd\obj\Debug\netcoreapp3.1\Razor\Pages\Admin\Usuarios.cshtml.g.cs
-C:\Users\JohnIgnacio\Downloads\mision tic\progrmacion\PCICLO3\Nueva carpeta\Aplicacion2\Aplicacion.App\FrontEnd\obj\Debug\netcoreapp3.1\Razor\Pages\DatosEstacion\EditEstMet.cshtml.g.cs
-C:\Users\JohnIgnacio\Downloads\mision tic\progrmacion\PCICLO3\Nueva carpeta\Aplicacion2\Aplicacion.App\FrontEnd\obj\Debug\netcoreapp3.1\Razor\Pages\DatosEstacion\EstacionMet.cshtml.g.cs
-C:\Users\JohnIgnacio\Downloads\mision tic\progrmacion\PCICLO3\Nueva carpeta\Aplicacion2\Aplicacion.App\FrontEnd\obj\Debug\netcoreapp3.1\Razor\Pages\DatosEstacion\IngDatosMet.cshtml.g.cs
-C:\Users\JohnIgnacio\Downloads\mision tic\progrmacion\PCICLO3\Nueva carpeta\Aplicacion2\Aplicacion.App\FrontEnd\obj\Debug\netcoreapp3.1\Razor\Pages\DatosEstacion\IngEstMet.cshtml.g.cs
-C:\Users\JohnIgnacio\Downloads\mision tic\progrmacion\PCICLO3\Nueva carpeta\Aplicacion2\Aplicacion.App\FrontEnd\obj\Debug\netcoreapp3.1\Razor\Pages\DatosTecnMant\TecnMant.cshtml.g.cs
 C:\Users\JohnIgnacio\Downloads\mision tic\progrmacion\PCICLO3\Nueva carpeta\Aplicacion2\Aplicacion.App\FrontEnd\obj\Debug\netcoreapp3.1\Razor\Pages\Error.cshtml.g.cs
 C:\Users\JohnIgnacio\Downloads\mision tic\progrmacion\PCICLO3\Nueva carpeta\Aplicacion2\Aplicacion.App\FrontEnd\obj\Debug\netcoreapp3.1\Razor\Pages\Estacion\EstacionMet.cshtml.g.cs
 C:\Users\JohnIgnacio\Downloads\mision tic\progrmacion\PCICLO3\Nueva carpeta\Aplicacion2\Aplicacion.App\FrontEnd\obj\Debug\netcoreapp3.1\Razor\Pages\Estacion\Montaje.cshtml.g.cs
@@ -393,3 +388,4 @@ C:\Users\Equipo\Documents\GitHub\CODIGO-ESTACION-METEOROLOGICA-GRUPO-1\FrontEnd\
 C:\Users\Equipo\Documents\GitHub\CODIGO-ESTACION-METEOROLOGICA-GRUPO-1\FrontEnd\obj\Debug\netcoreapp3.1\staticwebassets\FrontEnd.StaticWebAssets.xml
 C:\Users\Equipo\Documents\GitHub\CODIGO-ESTACION-METEOROLOGICA-GRUPO-1\FrontEnd\obj\Debug\netcoreapp3.1\FrontEnd.genruntimeconfig.cache
 C:\Users\Equipo\Documents\GitHub\CODIGO-ESTACION-METEOROLOGICA-GRUPO-1\FrontEnd\obj\Debug\netcoreapp3.1\Razor\Pages\Mantenimiento\FormMto.cshtml.g.cs
+C:\Users\JohnIgnacio\Downloads\mision tic\progrmacion\PCICLO3\Nueva carpeta\Aplicacion2\Aplicacion.App\FrontEnd\obj\Debug\netcoreapp3.1\Razor\Pages\Mantenimiento\FormMto.cshtml.g.cs
