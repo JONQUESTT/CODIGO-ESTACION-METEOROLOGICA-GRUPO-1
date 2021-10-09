@@ -12,22 +12,22 @@ namespace MyApp.Namespace
     
     public class FormPersonaModel : PageModel
     {
-        public static IRepositorioPersona _repoPersona = new RepositorioPersona(new Aplicacion.App.Persistencia.AppContext());
+       public static IRepositorioPersona _repoPersona=new RepositorioPersona(new Aplicacion.App.Persistencia.AppContext());
         public void OnGet()
         {
         }
-
-        public void OnPost(string TipoPersona,string Nombre,string Apellido,string Identificacion,string Correo,string Genero,DateTime FechaIngreso,string Cargo,string Turno,char EstadoPersona,int IDTecnico)
+        public void OnPost(string Identificacion,string Nombre,string Apellido,string Genero,char EstadoPersona)
         {
-            var persona = new Persona();
-            persona.Identificacion = Identificacion;
-            persona.Nombres = Nombre;
-            persona.Apellidos = Apellido;
-            persona.Genero = Genero;
-            persona.Estado = EstadoPersona; 
+            var persona=new Persona();
+            persona.Nombres=Nombre;
+            persona.Identificacion=Identificacion;
+            persona.Apellidos=Apellido;
+            persona.Genero=Genero;
+            persona.Estado=EstadoPersona;
             _repoPersona.AddPersona(persona);
         }
-
-
     }
+
+
+    
 }
