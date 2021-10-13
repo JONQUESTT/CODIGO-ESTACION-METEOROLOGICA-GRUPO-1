@@ -180,19 +180,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\JohnIgnacio\\.nuget\\packages\\": {}
+    "C:\\Users\\Equipo\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\JohnIgnacio\\Downloads\\mision tic\\progrmacion\\PCICLO3\\Nueva carpeta\\Aplicacion2\\Aplicacion.App\\Aplicacion.App.Dominio\\Aplicacion.App.Dominio.csproj",
+      "projectUniqueName": "C:\\Users\\Equipo\\Documents\\GitHub\\CODIGO-ESTACION-METEOROLOGICA-GRUPO-1\\Aplicacion.App.Dominio\\Aplicacion.App.Dominio.csproj",
       "projectName": "Aplicacion.App.Dominio",
-      "projectPath": "C:\\Users\\JohnIgnacio\\Downloads\\mision tic\\progrmacion\\PCICLO3\\Nueva carpeta\\Aplicacion2\\Aplicacion.App\\Aplicacion.App.Dominio\\Aplicacion.App.Dominio.csproj",
-      "packagesPath": "C:\\Users\\JohnIgnacio\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\JohnIgnacio\\Downloads\\mision tic\\progrmacion\\PCICLO3\\Nueva carpeta\\Aplicacion2\\Aplicacion.App\\Aplicacion.App.Dominio\\obj\\",
+      "projectPath": "C:\\Users\\Equipo\\Documents\\GitHub\\CODIGO-ESTACION-METEOROLOGICA-GRUPO-1\\Aplicacion.App.Dominio\\Aplicacion.App.Dominio.csproj",
+      "packagesPath": "C:\\Users\\Equipo\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Equipo\\Documents\\GitHub\\CODIGO-ESTACION-METEOROLOGICA-GRUPO-1\\Aplicacion.App.Dominio\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\JohnIgnacio\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Equipo\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netstandard2.0"
