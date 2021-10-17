@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Aplicacion.App.Persistencia.Migrations
 {
     [DbContext(typeof(AppContext))]
-    [Migration("20210922232803_Inicial")]
+    [Migration("20211017212828_Inicial")]
     partial class Inicial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -44,7 +44,7 @@ namespace Aplicacion.App.Persistencia.Migrations
 
                     b.HasIndex("EstacionId");
 
-                    b.ToTable("DatoMeteorologico");
+                    b.ToTable("DatosMeteorologicos");
                 });
 
             modelBuilder.Entity("Aplicacion.App.Dominio.Estacion", b =>
@@ -94,6 +94,10 @@ namespace Aplicacion.App.Persistencia.Migrations
                     b.Property<string>("Apellidos")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("Discriminator")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Estado")
                         .IsRequired()
                         .HasColumnType("nvarchar(1)");
@@ -101,8 +105,8 @@ namespace Aplicacion.App.Persistencia.Migrations
                     b.Property<string>("Genero")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Identificacion")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("Identificacion")
+                        .HasColumnType("int");
 
                     b.Property<string>("Nombres")
                         .HasColumnType("nvarchar(max)");
@@ -110,6 +114,8 @@ namespace Aplicacion.App.Persistencia.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Personas");
+
+                    b.HasDiscriminator<string>("Discriminator").HasValue("Persona");
                 });
 
             modelBuilder.Entity("Aplicacion.App.Dominio.Reporte", b =>
@@ -124,19 +130,79 @@ namespace Aplicacion.App.Persistencia.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Reporte");
+                    b.ToTable("Reportes");
                 });
 
-            modelBuilder.Entity("Aplicacion.App.Dominio.TecnicoMantenimiento", b =>
+            modelBuilder.Entity("Aplicacion.App.Dominio.TipoReporte", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .UseIdentityColumn();
 
+                    b.Property<string>("Descripcion")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("FechaHora")
+                        .HasColumnType("datetime2");
+
                     b.HasKey("Id");
 
-                    b.ToTable("TecnicoMantenimiento");
+                    b.ToTable("TiposReporte");
+                });
+
+            modelBuilder.Entity("Aplicacion.App.Dominio.Validacion", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .UseIdentityColumn();
+
+                    b.Property<int>("Val")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Validaciones");
+                });
+
+            modelBuilder.Entity("Aplicacion.App.Dominio.Administrador", b =>
+                {
+                    b.HasBaseType("Aplicacion.App.Dominio.Persona");
+
+                    b.Property<int>("Password")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Rol")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasDiscriminator().HasValue("Administrador");
+                });
+
+            modelBuilder.Entity("Aplicacion.App.Dominio.PersonalInstituto", b =>
+                {
+                    b.HasBaseType("Aplicacion.App.Dominio.Persona");
+
+                    b.Property<int>("Password")
+                        .HasColumnType("int")
+                        .HasColumnName("PersonalInstituto_Password");
+
+                    b.HasDiscriminator().HasValue("PersonalInstituto");
+                });
+
+            modelBuilder.Entity("Aplicacion.App.Dominio.TecnicoMantenimiento", b =>
+                {
+                    b.HasBaseType("Aplicacion.App.Dominio.Persona");
+
+                    b.Property<int?>("ReporteId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("TarjetaProfesional")
+                        .HasColumnType("int");
+
+                    b.HasIndex("ReporteId");
+
+                    b.HasDiscriminator().HasValue("TecnicoMantenimiento");
                 });
 
             modelBuilder.Entity("Aplicacion.App.Dominio.DatoMeteorologico", b =>
@@ -159,6 +225,15 @@ namespace Aplicacion.App.Persistencia.Migrations
                     b.Navigation("Reporte");
 
                     b.Navigation("Tecnico");
+                });
+
+            modelBuilder.Entity("Aplicacion.App.Dominio.TecnicoMantenimiento", b =>
+                {
+                    b.HasOne("Aplicacion.App.Dominio.Reporte", "Reporte")
+                        .WithMany()
+                        .HasForeignKey("ReporteId");
+
+                    b.Navigation("Reporte");
                 });
 
             modelBuilder.Entity("Aplicacion.App.Dominio.Estacion", b =>

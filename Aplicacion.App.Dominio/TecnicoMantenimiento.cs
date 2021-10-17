@@ -2,8 +2,9 @@ using System;
 
 namespace Aplicacion.App.Dominio
 {
-    public class TecnicoMantenimiento
+    public class TecnicoMantenimiento:Persona
     {
-        public int Id{get;set;}
+        public int TarjetaProfesional{get;set;}
+        public Reporte Reporte{get;set;}
     }
 }

@@ -10,8 +10,8 @@ namespace Aplicacion.App.Persistencia
         IEnumerable<Persona> GetAllPersonas();
         Persona AddPersona(Persona persona);    
         Persona UpDatePersona(Persona persona);    
-        Persona GetPersona(string Identificacion);    
-        Persona DeletePersona(string Identificacion);    
+        Persona GetPersona(int Identificacion);    
+        Persona DeletePersona(int Identificacion);    
         
     } 
 }

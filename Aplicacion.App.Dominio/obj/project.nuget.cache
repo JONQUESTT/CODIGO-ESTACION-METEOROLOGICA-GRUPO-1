@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "c1qGOqkXXJ8TccFEOX6vNyhhU7YkYISYzo7BBwBqlNvs2yrDu4cIPtSfY7N/aJpIRIWZSbR7ysN74iJG0kFk7Q==",
+  "dgSpecHash": "IR1af3HVYuCsZXEnPNdM3t7iGTfSUQ3PuO2V0yPrZdBt6mDcgQimqR2x9+oXeCind7KFSAGgmKNrVZuYZj0i2w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Equipo\\Documents\\GitHub\\CODIGO-ESTACION-METEOROLOGICA-GRUPO-1\\Aplicacion.App.Dominio\\Aplicacion.App.Dominio.csproj",
+  "projectFilePath": "C:\\Users\\JohnIgnacio\\Downloads\\mision tic\\progrmacion\\PCICLO3\\Nueva carpeta\\Aplicacion2\\Aplicacion.App\\Aplicacion.App.Dominio\\Aplicacion.App.Dominio.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Equipo\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Users\\Equipo\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+    "C:\\Users\\JohnIgnacio\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\JohnIgnacio\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
   ],
   "logs": []
 }

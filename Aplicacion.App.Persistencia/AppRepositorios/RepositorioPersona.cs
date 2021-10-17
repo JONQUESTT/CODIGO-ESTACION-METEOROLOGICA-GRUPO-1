@@ -34,7 +34,7 @@ namespace Aplicacion.App.Persistencia
             }
             return personaEncontrada;
         }
-        Persona IRepositorioPersona.GetPersona(string Identificacion)
+        Persona IRepositorioPersona.GetPersona(int Identificacion)
         {
             var personaEncontrada = _appContext.Personas.FirstOrDefault(p=> p.Identificacion == Identificacion);
             return personaEncontrada;
@@ -43,7 +43,7 @@ namespace Aplicacion.App.Persistencia
         {
             return _appContext.Personas;
         }
-        Persona IRepositorioPersona.DeletePersona(string Identificacion)
+        Persona IRepositorioPersona.DeletePersona(int Identificacion)
         {
             var personaEncontrada = _appContext.Personas.FirstOrDefault(p=> p.Identificacion == Identificacion);
             if (personaEncontrada != null)

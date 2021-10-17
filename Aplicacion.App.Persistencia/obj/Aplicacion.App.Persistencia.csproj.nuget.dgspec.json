@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Equipo\\Documents\\GitHub\\CODIGO-ESTACION-METEOROLOGICA-GRUPO-1\\Aplicacion.App.Persistencia\\Aplicacion.App.Persistencia.csproj": {}
+    "C:\\Users\\JohnIgnacio\\Downloads\\mision tic\\progrmacion\\PCICLO3\\Nueva carpeta\\Aplicacion2\\Aplicacion.App\\Aplicacion.App.Persistencia\\Aplicacion.App.Persistencia.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Equipo\\Documents\\GitHub\\CODIGO-ESTACION-METEOROLOGICA-GRUPO-1\\Aplicacion.App.Dominio\\Aplicacion.App.Dominio.csproj": {
+    "C:\\Users\\JohnIgnacio\\Downloads\\mision tic\\progrmacion\\PCICLO3\\Nueva carpeta\\Aplicacion2\\Aplicacion.App\\Aplicacion.App.Dominio\\Aplicacion.App.Dominio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Equipo\\Documents\\GitHub\\CODIGO-ESTACION-METEOROLOGICA-GRUPO-1\\Aplicacion.App.Dominio\\Aplicacion.App.Dominio.csproj",
+        "projectUniqueName": "C:\\Users\\JohnIgnacio\\Downloads\\mision tic\\progrmacion\\PCICLO3\\Nueva carpeta\\Aplicacion2\\Aplicacion.App\\Aplicacion.App.Dominio\\Aplicacion.App.Dominio.csproj",
         "projectName": "Aplicacion.App.Dominio",
-        "projectPath": "C:\\Users\\Equipo\\Documents\\GitHub\\CODIGO-ESTACION-METEOROLOGICA-GRUPO-1\\Aplicacion.App.Dominio\\Aplicacion.App.Dominio.csproj",
-        "packagesPath": "C:\\Users\\Equipo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Equipo\\Documents\\GitHub\\CODIGO-ESTACION-METEOROLOGICA-GRUPO-1\\Aplicacion.App.Dominio\\obj\\",
+        "projectPath": "C:\\Users\\JohnIgnacio\\Downloads\\mision tic\\progrmacion\\PCICLO3\\Nueva carpeta\\Aplicacion2\\Aplicacion.App\\Aplicacion.App.Dominio\\Aplicacion.App.Dominio.csproj",
+        "packagesPath": "C:\\Users\\JohnIgnacio\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\JohnIgnacio\\Downloads\\mision tic\\progrmacion\\PCICLO3\\Nueva carpeta\\Aplicacion2\\Aplicacion.App\\Aplicacion.App.Dominio\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Equipo\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\JohnIgnacio\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
@@ -53,21 +53,21 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.413\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.414\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Equipo\\Documents\\GitHub\\CODIGO-ESTACION-METEOROLOGICA-GRUPO-1\\Aplicacion.App.Persistencia\\Aplicacion.App.Persistencia.csproj": {
+    "C:\\Users\\JohnIgnacio\\Downloads\\mision tic\\progrmacion\\PCICLO3\\Nueva carpeta\\Aplicacion2\\Aplicacion.App\\Aplicacion.App.Persistencia\\Aplicacion.App.Persistencia.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Equipo\\Documents\\GitHub\\CODIGO-ESTACION-METEOROLOGICA-GRUPO-1\\Aplicacion.App.Persistencia\\Aplicacion.App.Persistencia.csproj",
+        "projectUniqueName": "C:\\Users\\JohnIgnacio\\Downloads\\mision tic\\progrmacion\\PCICLO3\\Nueva carpeta\\Aplicacion2\\Aplicacion.App\\Aplicacion.App.Persistencia\\Aplicacion.App.Persistencia.csproj",
         "projectName": "Aplicacion.App.Persistencia",
-        "projectPath": "C:\\Users\\Equipo\\Documents\\GitHub\\CODIGO-ESTACION-METEOROLOGICA-GRUPO-1\\Aplicacion.App.Persistencia\\Aplicacion.App.Persistencia.csproj",
-        "packagesPath": "C:\\Users\\Equipo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Equipo\\Documents\\GitHub\\CODIGO-ESTACION-METEOROLOGICA-GRUPO-1\\Aplicacion.App.Persistencia\\obj\\",
+        "projectPath": "C:\\Users\\JohnIgnacio\\Downloads\\mision tic\\progrmacion\\PCICLO3\\Nueva carpeta\\Aplicacion2\\Aplicacion.App\\Aplicacion.App.Persistencia\\Aplicacion.App.Persistencia.csproj",
+        "packagesPath": "C:\\Users\\JohnIgnacio\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\JohnIgnacio\\Downloads\\mision tic\\progrmacion\\PCICLO3\\Nueva carpeta\\Aplicacion2\\Aplicacion.App\\Aplicacion.App.Persistencia\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Equipo\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\JohnIgnacio\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.1"
@@ -78,8 +78,8 @@
         "frameworks": {
           "netstandard2.1": {
             "projectReferences": {
-              "C:\\Users\\Equipo\\Documents\\GitHub\\CODIGO-ESTACION-METEOROLOGICA-GRUPO-1\\Aplicacion.App.Dominio\\Aplicacion.App.Dominio.csproj": {
-                "projectPath": "C:\\Users\\Equipo\\Documents\\GitHub\\CODIGO-ESTACION-METEOROLOGICA-GRUPO-1\\Aplicacion.App.Dominio\\Aplicacion.App.Dominio.csproj"
+              "C:\\Users\\JohnIgnacio\\Downloads\\mision tic\\progrmacion\\PCICLO3\\Nueva carpeta\\Aplicacion2\\Aplicacion.App\\Aplicacion.App.Dominio\\Aplicacion.App.Dominio.csproj": {
+                "projectPath": "C:\\Users\\JohnIgnacio\\Downloads\\mision tic\\progrmacion\\PCICLO3\\Nueva carpeta\\Aplicacion2\\Aplicacion.App\\Aplicacion.App.Dominio\\Aplicacion.App.Dominio.csproj"
               }
             }
           }
@@ -129,7 +129,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.413\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.414\\RuntimeIdentifierGraph.json"
         }
       }
     }

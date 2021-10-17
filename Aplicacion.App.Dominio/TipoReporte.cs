@@ -2,10 +2,10 @@ using System;
 
 namespace Aplicacion.App.Dominio
 {
-    public enum TipoReporte
+    public class TipoReporte
     {
-        Instalacion,
-        ReporteDiario,
-        ReporteMto
+        public int Id{get;set;}
+        public DateTime FechaHora{get;set;}
+        public string Descripcion{get;set;}
     }
 }

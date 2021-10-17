@@ -25,7 +25,7 @@ namespace FrontEnd
         {
             var p=new Persona
             {
-                Identificacion="1234",
+                Identificacion=1234,
                 Nombres="Ana",
                 Apellidos="Arcos",
                 Genero="Femenino",

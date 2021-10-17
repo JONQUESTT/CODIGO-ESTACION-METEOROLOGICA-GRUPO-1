@@ -22,7 +22,7 @@ namespace Aplicacion.App.PresentacionC
             {
                 Nombres = "Carlos",
                 Apellidos = "Guerra",
-                Identificacion = "4567",
+                Identificacion = 4567,
                 //Genero = "Femenino",
                 //Estado = 'A'
             };

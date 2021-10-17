@@ -16,7 +16,7 @@ namespace MyApp.Namespace
         public void OnGet()
         {
         }
-        public void OnPost(string Identificacion,string Nombre,string Apellido,string Genero,char EstadoPersona)
+        public void OnPost(int Identificacion,string Nombre,string Apellido,string Genero,char EstadoPersona)
         {
             var persona=new Persona();
             persona.Nombres=Nombre;

@@ -1,5 +1,4 @@
 using System;
-
 namespace Aplicacion.App.Dominio
 {
     public class Estacion

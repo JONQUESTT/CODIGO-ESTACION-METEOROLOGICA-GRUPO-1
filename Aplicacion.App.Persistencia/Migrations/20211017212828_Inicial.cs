@@ -8,24 +8,7 @@ namespace Aplicacion.App.Persistencia.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "Personas",
-                columns: table => new
-                {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    Identificacion = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Nombres = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Apellidos = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Genero = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Estado = table.Column<string>(type: "nvarchar(1)", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Personas", x => x.Id);
-                });
-
-            migrationBuilder.CreateTable(
-                name: "Reporte",
+                name: "Reportes",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
@@ -34,19 +17,63 @@ namespace Aplicacion.App.Persistencia.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Reporte", x => x.Id);
+                    table.PrimaryKey("PK_Reportes", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
-                name: "TecnicoMantenimiento",
+                name: "TiposReporte",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1")
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    FechaHora = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    Descripcion = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_TecnicoMantenimiento", x => x.Id);
+                    table.PrimaryKey("PK_TiposReporte", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Validaciones",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Val = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Validaciones", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Personas",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Identificacion = table.Column<int>(type: "int", nullable: false),
+                    Nombres = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Apellidos = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Genero = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Estado = table.Column<string>(type: "nvarchar(1)", nullable: false),
+                    Discriminator = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Password = table.Column<int>(type: "int", nullable: true),
+                    Rol = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    PersonalInstituto_Password = table.Column<int>(type: "int", nullable: true),
+                    TarjetaProfesional = table.Column<int>(type: "int", nullable: true),
+                    ReporteId = table.Column<int>(type: "int", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Personas", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_Personas_Reportes_ReporteId",
+                        column: x => x.ReporteId,
+                        principalTable: "Reportes",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.CreateTable(
@@ -67,21 +94,21 @@ namespace Aplicacion.App.Persistencia.Migrations
                 {
                     table.PrimaryKey("PK_Estaciones", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Estaciones_Reporte_ReporteId",
-                        column: x => x.ReporteId,
-                        principalTable: "Reporte",
+                        name: "FK_Estaciones_Personas_TecnicoId",
+                        column: x => x.TecnicoId,
+                        principalTable: "Personas",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
-                        name: "FK_Estaciones_TecnicoMantenimiento_TecnicoId",
-                        column: x => x.TecnicoId,
-                        principalTable: "TecnicoMantenimiento",
+                        name: "FK_Estaciones_Reportes_ReporteId",
+                        column: x => x.ReporteId,
+                        principalTable: "Reportes",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.CreateTable(
-                name: "DatoMeteorologico",
+                name: "DatosMeteorologicos",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
@@ -93,9 +120,9 @@ namespace Aplicacion.App.Persistencia.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_DatoMeteorologico", x => x.Id);
+                    table.PrimaryKey("PK_DatosMeteorologicos", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_DatoMeteorologico_Estaciones_EstacionId",
+                        name: "FK_DatosMeteorologicos_Estaciones_EstacionId",
                         column: x => x.EstacionId,
                         principalTable: "Estaciones",
                         principalColumn: "Id",
@@ -103,8 +130,8 @@ namespace Aplicacion.App.Persistencia.Migrations
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_DatoMeteorologico_EstacionId",
-                table: "DatoMeteorologico",
+                name: "IX_DatosMeteorologicos_EstacionId",
+                table: "DatosMeteorologicos",
                 column: "EstacionId");
 
             migrationBuilder.CreateIndex(
@@ -116,24 +143,32 @@ namespace Aplicacion.App.Persistencia.Migrations
                 name: "IX_Estaciones_TecnicoId",
                 table: "Estaciones",
                 column: "TecnicoId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Personas_ReporteId",
+                table: "Personas",
+                column: "ReporteId");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "DatoMeteorologico");
+                name: "DatosMeteorologicos");
 
             migrationBuilder.DropTable(
-                name: "Personas");
+                name: "TiposReporte");
+
+            migrationBuilder.DropTable(
+                name: "Validaciones");
 
             migrationBuilder.DropTable(
                 name: "Estaciones");
 
             migrationBuilder.DropTable(
-                name: "Reporte");
+                name: "Personas");
 
             migrationBuilder.DropTable(
-                name: "TecnicoMantenimiento");
+                name: "Reportes");
         }
     }
 }
