@@ -1,0 +1,28 @@
+﻿@page
+@model FrontEnd.Pages.AddDatMetModel
+@{
+}
+<h1></h1>
+<h3 class="display-6">@Model.codigoestacion</h1><br>
+
+<div class="container bloque bloque_list">
+    <form class="d-flex row g-2 col-md-5 " method="POST">
+        <div class="row">
+            <label for="AddDatMetCodigo" class="form-label col-md-4 ">CÓDIGO </label>
+            <input class="col-md-8 " asp-for="@Model.estacion.Codigo" id="AddDatMetCodigo"
+                placeholder="Código">
+        </div>
+        <div></div>
+        <div class="row">
+            <label for="AddDatMetIdent" class="form-label col-md-4">IDENTIFICACIÓN</label>
+            <input class="col-md-8 " asp-for="@Model.tecnico.Identificacion" id="AddDatMetIdent"
+                placeholder="Identificación">
+        </div>
+        <div></div>
+        <div class="row">
+            <div class="col-md-1"></div>
+            <input class="col-md-2" type="submit" value="Asignar Ténico" asp-page-handler="AsigTec">
+        </div>
+    </form>
+</div>
+<h1 class="display-6">@Model.mensajeerror</h1>

@@ -1,0 +1,38 @@
+﻿@page
+@model FrontEnd.Pages.InicioReporteModel
+@{
+}
+<h1 class="display-6 encabezado">REPORTES</h1><br>
+<div class="container bloque bloque_list">
+  <form class="d-flex row g-2 col-md-5 " method="POST">
+    <h3 class="display-6">Estación</h1>
+    <div></div>
+    <div class="row">
+      <label for="InicioReporteCodEstacion" class="form-label col-md-6 ">CODIGO </label>
+      <input class="col-md-6" asp-for="@Model.estacion.Codigo" id="InicioReporteCodEstacion"
+        placeholder="Codigo Estación">
+    </div>
+    <div></div>
+    <h3 class="display-6">@Model.codigoestacion</h3>
+    <div class="row">
+      <div class="col-md-1"></div>
+      <input class="col-md-4" type="submit" value="Consultar" asp-page-handler="ConsultarEstacion">
+    </div>
+  </form>
+<div>
+<div class="container bloque bloque_list">  
+  <form class="d-flex row g-2 col-md-5 " method="POST">
+    <h3 class="display-6">Técnico</h1><br>
+    <div class="row">
+      <label for="InicioReporteIdenTec" class="form-label col-md-6">Identificación Técnico </label>
+      <input class="col-md-6" asp-for="@Model.tecnico.Identificacion" id="InicioReporteIdenTec"
+        placeholder="Identificación Técnico">
+    </div>
+    <div></div>
+    <h3 class="display-6">@Model.identec</h3>
+    <div class="row">
+      <div class="col-md-1"></div>
+      <input class="col-md-4" type="submit" value="Consultar" asp-page-handler="ConsultarTecnico">
+    </div>
+  </form>
+</div>

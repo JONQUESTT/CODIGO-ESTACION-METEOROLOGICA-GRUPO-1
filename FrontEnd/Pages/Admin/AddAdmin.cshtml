@@ -1,317 +1,281 @@
 ﻿@page
-@model MyApp.Namespace.MontajeModel
+@model FrontEnd.Pages.AddAdminModel
 @{
-    ViewData["Title"] = "Montaje";
 }
-<h1 class="display-6 oculto encabezado" id="TituloFormEstacion">FORMULARIO ESTACION</h1><br>
-<form class="row g-3 formularioDatos" id="formEstacion" name="formEstacion">
-    <div class="col-md-6">
-        <label for="Codigo" class="form-label">Código</label>
-        <input type="text" class="form-control" id="Codigo" name="Codigo" required>
-    </div>
-    <div class="col-md-6">
-        <label for="FechaMontaje" class="form-label">Fecha de Montaje</label>
-        <input type="date" class="form-control" id="FechaMontaje" name="FechaMontaje" required>
-    </div>
+<h1 class="display-6 encabezado" id="TituloFormEstacion">ADICION DE ESTACIONES Y TECNICOS</h1><br>
+<div class="container bloque bloque_list">
+  <form method="POST" class="row g-3 formularioDatos" id="formEstacion">
+    <h3 class="display-6">Estación</h1><br>
+      <div class="col-md-6">
+        <label for="AddAdminCodEstacion" class="form-label">Código</label>
+        <input type="text" class="form-control" id="AddAdminCodEstacion" asp-for="@Model.estacion.Codigo" required>
+      </div>
+      <div class="col-md-6">
+        <label for="AddAdminFechaMontaje" class="form-label">Fecha de Montaje</label>
+        <input type="date" class="form-control" id="AddAdminFechaMontaje" asp-for="@Model.estacion.FechaMontaje"
+          required>
+      </div>
 
-    <div class="col-md-2">
+      <div class="col-md-4">
         <label for="Latitud" class="form-label">Latitud</label>
-        <input type="num" class="form-control" id="Latitud" name="Latitud" required>
-    </div>
-    <div class="col-md-2">
+        <input type="num" class="form-control" id="Latitud" asp-for="@Model.estacion.Latitud" required>
+      </div>
+      <div class="col-md-4">
         <label for="Longitud" class="form-label">Longitud</label>
-        <input type="num" class="form-control" id="Longitud" name="Longitud" required>
-    </div>
-    <div class="col-md-4">
-        <label for="Departamento" class="form-label">Departamento</label>
-        <select class="form-select" id="Departamento" name="Departamento" required>
-            <option selected disabled value="">Seleccionar...</option>
-            <option value = "Amazonas">Amazonas</option>
-            <option value = "Antioquia">Antioquia</option>
-            <option value = "Arauca">Arauca</option>
-            <option value = "Atlántico">Atlántico</option>
-            <option value = "Bolívar">Bolívar</option>
-            <option value = "Boyacá">Boyacá</option>
-		    <option value = "Caldas">Caldas</option>
-            <option value = "Caquetá">Caquetá</option>
-            <option value = "Casanare">Casanare</option>
-            <option value = "Cauca">Cauca</option>
-            <option value = "Cesar">Cesar</option>
-            <option value = "Chocó">Chocó</option>		            
-            <option value = "Córdoba">Córdoba</option>
-            <option value = "Cundinamarca">Cundinamarca</option>
-            <option value = "Guainía">Guainía</option>
-            <option value = "Guaviare">Guaviare</option>
-            <option value = "Huila">Huila</option>
-            <option value = "La Guajira">La Guajira</option>
-            <option value = "Magdalena">Magdalena</option>
-		    <option value = "Meta">Meta</option>
-            <option value = "Nariño">Nariño</option>
-            <option value = "Norte de Santander">Norte de Santander</option>
-            <option value = "Putumayo">Putumayo</option>                
-            <option value = "Quindío">Quindío</option>  
-	        <option value = "Risaralda">Risaralda</option>
-            <option value = "San Andrés y Providencia">San Andrés y Providencia</option>
-            <option value = "Santander">Santander</option>
-            <option value = "Sucre">Sucre</option>
-            <option value = "Tolima">Tolima</option>
-            <option value = "Valle del Cauca">Valle del Cauca</option>
-            <option value = "Vaupés">Vaupés</option>
-            <option value = "Vichada">Vichada</option>
-        </select>
-    </div>
-    <div class="col-md-4">
+        <input type="num" class="form-control" id="Longitud" asp-for="@Model.estacion.Longitud" required>
+      </div>
+      <div class="col-md-4">
         <label for="Municipio" class="form-label">Municipio</label>
-        <select class="form-select" id="Municipio" name="Municipio" required>
-            <option value="">Seleccionar...</option>
-            <option value="Abejorral">Abejorral</option>
-            <option value="Abrego">Abrego</option>
-             <option value="Abriaquí">Abriaquí</option>
-            <option value="Acacías">Acacías</option>
-            <option value="Acandí">Acandí</option>
-            <option value="Acevedo">Acevedo</option>
-            <option value="Achí">Achí</option>
-            <option value="Agrado">Agrado</option>
-            <option value="Agua de Dios">Agua de Dios</option>
-            <option value="Aguachica">Aguachica</option>
-            <option value="Aguada">Aguada</option>
-            <option value="Aguadas">Aguadas</option>
-            <option value="Aguazul">Aguazul</option>
-            <option value="Agustín Codazzi">Agustín Codazzi</option>
-            <option value="Aipe">Aipe</option>
-            <option value="Albán">Albán</option>
-            <option value="Albán">Albán</option>
-            <option value="Albania">Albania</option>
-            <option value="Alcalá">Alcalá</option>
-            <option value="Aldana">Aldana</option>
-            <option value="Alejandría">Alejandría</option>
-            <option value="Algarrobo">Algarrobo</option>
-            <option value="Algeciras">Algeciras</option>
-            <option value="Almaguer">Almaguer</option>
-            <option value="Almeida">Almeida</option>
-            <option value="Alpujarra">Alpujarra</option>
-            <option value="Altamira">Altamira</option>
-            <option value="Alto Baudo">Alto Baudo</option>
-            <option value="Altos del Rosario">Altos del Rosario</option>
-            <option value="Alvarado">Alvarado</option>
-            <option value="Amagá">Amagá</option>
-            <option value="Amalfi">Amalfi</option>
-            <option value="Ambalema">Ambalema</option>
-            <option value="Anapoima">Anapoima</option>
-            <option value="Ancuyá">Ancuyá</option>
-            <option value="Andalucía">Andalucía</option>
-            <option value="Andes">Andes</option>
-            <option value="Angelópolis">Angelópolis</option>
-            <option value="Angostura">Angostura</option>
-            <option value="Anolaima">Anolaima</option>
-            <option value="Anorí">Anorí</option>
-            <option value="Anserma">Anserma</option>
-            <option value="Ansermanuevo">Ansermanuevo</option>
-            <option value="Anza">Anza</option>
-            <option value="Anzoátegui">Anzoátegui</option>
-            <option value="Apartadó">Apartadó</option>
-            <option value="Apía">Apía</option>
-            <option value="Apulo">Apulo</option>
-            <option value="Aquitania">Aquitania</option>
-            <option value="Aracataca">Aracataca</option>
-            <option value="Aranzazu">Aranzazu</option>
-            <option value="Aratoca">Aratoca</option>
-            <option value="Arauca">Arauca</option>
-            <option value="Arauquita">Arauquita</option>
-            <option value="Arbeláez">Arbeláez</option>
-            <option value="Arboleda">Arboleda</option>
-            <option value="Arboledas">Arboledas</option>
-            <option value="Arboletes">Arboletes</option>
-            <option value="Arcabuco">Arcabuco</option>
-            <option value="Arenal">Arenal</option>
-            <option value="Argelia">Argelia</option>
-            <option value="Ariguaní">Ariguaní</option>
-            <option value="Arjona">Arjona</option>
-            <option value="Armenia">Armenia</option>
-                                            <option value="Armero">Armero</option>
-                                            <option value="Arroyohondo">Arroyohondo</option>
-                                            <option value="Astrea">Astrea</option>
-                                            <option value="Ataco">Ataco</option>
-                                            <option value="Atrato">Atrato</option>
-                                            <option value="Ayapel">Ayapel</option>
-                                            <option value="Bagadó">Bagadó</option>
-                                            <option value="Bahía Solano">Bahía Solano</option>
-                                            <option value="Bajo Baudó">Bajo Baudó</option>
-                                            <option value="Balboa">Balboa</option>
-                                            <option value="Baranoa">Baranoa</option>
-                                            <option value="Baraya">Baraya</option>
-                                            <option value="Barbacoas">Barbacoas</option>
-                                            <option value="Barbosa">Barbosa</option>
-                                            <option value="Barichara">Barichara</option>
-                                            <option value="Barranca de Upía">Barranca de Upía</option>
-                                            <option value="Barrancabermeja">Barrancabermeja</option>
-                                            <option value="Barrancas">Barrancas</option>
-                                            <option value="Barranco de Loba">Barranco de Loba</option>
-                                            <option value="Barranco Minas">Barranco Minas</option>
-                                            <option value="Barranquilla">Barranquilla</option>
-                                            <option value="Becerril">Becerril</option>
-                                            <option value="Belalcázar">Belalcázar</option>
-                                            <option value="Belén">Belén</option>
-                                            <option value="Belén de Bajirá">Belén de Bajirá</option>
-                                            <option value="Belén de Los Andaquies">Belén de Los Andaquies</option>
-                                            <option value="Belén de Umbría">Belén de Umbría</option>
-                                            <option value="Bello">Bello</option>
-                                            <option value="Belmira">Belmira</option>
-                                            <option value="Beltrán">Beltrán</option>
-                                            <option value="Berbeo">Berbeo</option>
-                                            <option value="Betania">Betania</option>
-                                            <option value="Betéitiva">Betéitiva</option>
-                                            <option value="Betulia">Betulia</option>
-                                            <option value="Bituima">Bituima</option>
-                                            <option value="Boavita">Boavita</option>
-                                            <option value="Bochalema">Bochalema</option>
-                                            <option value="Bogotá">Bogotá</option>
-                                            <option value="Bojacá">Bojacá</option>
-                                            <option value="Bojaya">Bojaya</option>
-                                            <option value="Bolívar">Bolívar</option>
-                                            <option value="Bosconia">Bosconia</option>
-                                            <option value="Boyacá">Boyacá</option>
-                                            <option value="Briceño">Briceño</option>
-                                            <option value="Briceño">Briceño</option>
-                                            <option value="Bucaramanga">Bucaramanga</option>
-                                            <option value="Bucarasica">Bucarasica</option>
-                                            <option value="Buenaventura">Buenaventura</option>
-                                            <option value="Buenavista">Buenavista</option>
-                                            <option value="Buenos Aires">Buenos Aires</option>
-                                            <option value="Buesaco">Buesaco</option>
-                                            <option value="Buga">Buga</option>
-                                            <option value="Bugalagrande">Bugalagrande</option>
-                                            <option value="Buriticá">Buriticá</option>
-                                            <option value="Busbanzá">Busbanzá</option>
-                                            <option value="Cabrera">Cabrera</option>
-                                            <option value="Cabrera">Cabrera</option>
-                                            <option value="Cabuyaro">Cabuyaro</option>
-                                            <option value="Cacahual">Cacahual</option>
-                                            <option value="Cáceres">Cáceres</option>
-                                            <option value="Cachipay">Cachipay</option>
-                                            <option value="Cachirá">Cachirá</option>
-                                            <option value="Cácota">Cácota</option>
-                                            <option value="Caicedo">Caicedo</option>
-                                            <option value="Caicedonia">Caicedonia</option>
-                                            <option value="Caimito">Caimito</option>
-                                            <option value="Cajamarca">Cajamarca</option>
-                                            <option value="Cajibío">Cajibío</option>
-                                            <option value="Cajicá">Cajicá</option>
-                                            <option value="Calamar">Calamar</option>
-                                            <option value="Calarca">Calarca</option>
-                                            <option value="Caldas">Caldas</option>
-                                            <option value="Caldas">Caldas</option>
-                                            <option value="Caldono">Caldono</option>
-                                            <option value="Cali">Cali</option>
-                                            <option value="California">California</option>
-                                            <option value="Calima">Calima</option>
-                                            <option value="Caloto">Caloto</option>
-                                            <option value="Campamento">Campamento</option>
-                                            <option value="Campo de la Cruz">Campo de la Cruz</option>
-                                            <option value="Campoalegre">Campoalegre</option>
-                                            <option value="Campohermoso">Campohermoso</option>
-                                            <option value="Canalete">Canalete</option>
-                                            <option value="Cañasgordas">Cañasgordas</option>
-                                            <option value="Candelaria">Candelaria</option>
-                                            <option value="Candelaria">Candelaria</option>
-                                            <option value="Cantagallo">Cantagallo</option>
-                                            <option value="Caparrapí">Caparrapí</option>
-                                            <option value="Capitanejo">Capitanejo</option>
-                                            <option value="Caqueza">Caqueza</option>
-                                            <option value="Caracolí">Caracolí</option>
-                                            <option value="Caramanta">Caramanta</option>
-                                            <option value="Carcasí">Carcasí</option>
-                                            <option value="Carepa">Carepa</option>
-                                            <option value="Carmen de Apicalá">Carmen de Apicalá</option>
-                                            <option value="Carmen de Carupa">Carmen de Carupa</option>
-                                            <option value="Carmen del Darien">Carmen del Darien</option>
-                                            <option value="Carolina">Carolina</option>
-                                            <option value="Cartagena">Cartagena</option>
-                                            <option value="Cartagena del Chairá">Cartagena del Chairá</option>
-                                            <option value="Cartago">Cartago</option>
-                                            <option value="Caruru">Caruru</option>
-                                            <option value="Casabianca">Casabianca</option>
-                                            <option value="Castilla La Nueva">Castilla La Nueva</option>
-                                            <option value="Caucasia">Caucasia</option>
-                                            <option value="Cepitá">Cepitá</option>
-                                            <option value="Cereté">Cereté</option>
-                                            <option value="Cerinza">Cerinza</option>
-                                            <option value="Cerrito">Cerrito</option>
-                                            <option value="Cerro San Antonio">Cerro San Antonio</option>
-                                            <option value="Cértegui">Cértegui</option>
-                                            <option value="Chachagüí">Chachagüí</option>
-                                            <option value="Chaguaní">Chaguaní</option>
-                                            <option value="Chalán">Chalán</option>
-                                            <option value="Chameza">Chameza</option>
-                                            <option value="Chaparral">Chaparral</option>
-                                            <option value="Charalá">Charalá</option>
-                                            <option value="Charta">Charta</option>
-                                            <option value="Chía">Chía</option>
-                                            <option value="Chibolo">Chibolo</option>
-                                            <option value="Chigorodó">Chigorodó</option>
-                                            <option value="Chima">Chima</option>
-                                            <option value="Chimá">Chimá</option>
-                                            <option value="Chimichagua">Chimichagua</option>
-                                            <option value="Chinácota">Chinácota</option>
-                                            <option value="Chinchiná">Chinchiná</option>
-                                            <option value="Chinú">Chinú</option>
-                                            <option value="Chipaque">Chipaque</option>
-                                            <option value="Chipatá">Chipatá</option>
-                                            <option value="Chiquinquirá">Chiquinquirá</option>
-                                            <option value="Chíquiza">Chíquiza</option>
-                                            <option value="Chiriguaná">Chiriguaná</option>
-                                            <option value="Chiscas">Chiscas</option>
-                                            <option value="Chita">Chita</option>
-                                            <option value="Chitagá">Chitagá</option>
-                                            <option value="Chitaraque">Chitaraque</option>
-                                            <option value="Chivatá">Chivatá</option>
-                                            <option value="Chivor">Chivor</option>
-                                            <option value="Choachí">Choachí</option>
-                                            <option value="Chocontá">Chocontá</option>
-                                            <option value="Cicuco">Cicuco</option>
-                                            <option value="Ciénaga">Ciénaga</option>
-                                            <option value="Ciénaga de Oro">Ciénaga de Oro</option>
-                                            <option value="Ciénega">Ciénega</option>
-                                            <option value="Cimitarra">Cimitarra</option>
-                                            <option value="Circasia">Circasia</option>
-                                            <option value="Cisneros">Cisneros</option>
-                                            <option value="Ciudad Bolívar">Ciudad Bolívar</option>
-                                            <option value="Clemencia">Clemencia</option>
-                                            <option value="Cocorná">Cocorná</option>
-                                            <option value="Coello">Coello</option>
-                                            <option value="Cogua">Cogua</option>
-                                            <option value="Colombia">Colombia</option>
-                                            <option value="Colón">Colón</option>
-                                            <option value="Coloso">Coloso</option>
-                                            <option value="Cómbita">Cómbita</option>
-                                            <option value="Concepción">Concepción</option>
-                                            <option value="Concordia">Concordia</option>
-                                            <option value="Condoto">Condoto</option>
-                                            <option value="Confines">Confines</option>
-                                            <option value="Consaca">Consaca</option>
-                                            <option value="Contadero">Contadero</option>
-                                            <option value="Contratación">Contratación</option>
-                                            <option value="Convención">Convención</option>
-                                            <option value="Copacabana">Copacabana</option>
-                                            <option value="Coper">Coper</option>
-                                            <option value="Córdoba">Córdoba</option>
-                                            <option value="Corinto">Corinto</option>
-                                            <option value="Coromoro">Coromoro</option>
-                                            <option value="Corozal">Corozal</option>
-                                            <option value="Corrales">Corrales</option>
-                                            <option value="Cota">Cota</option>
-                                            <option value="Cotorra">Cotorra</option>
-                                            <option value="Covarachía">Covarachía</option>
-                                            <option value="Coveñas">Coveñas</option>
-                                            <option value="Coyaima">Coyaima</option>
-                                            <option value="Cravo Norte">Cravo Norte</option>
-                                            <option value="Cuaspud">Cuaspud</option>
-                                            <option value="Cubará">Cubará</option>
-                                            <option value="Cubarral">Cubarral</option>
-                                            <option value="Cucaita">Cucaita</option>
-                                            <option value="Cucunubá">Cucunubá</option>
-                                            <option value="Cúcuta">Cúcuta</option>
-                                            <option value="Cucutilla">Cucutilla</option>
+        <select class="form-select" id="Municipio" asp-for="@Model.estacion.Municipio" required>
+          <option value="">Seleccionar...</option>
+          <option value="Abejorral">Abejorral</option>
+          <option value="Abrego">Abrego</option>
+          <option value="Abriaquí">Abriaquí</option>
+          <option value="Acacías">Acacías</option>
+          <option value="Acandí">Acandí</option>
+          <option value="Acevedo">Acevedo</option>
+          <option value="Achí">Achí</option>
+          <option value="Agrado">Agrado</option>
+          <option value="Agua de Dios">Agua de Dios</option>
+          <option value="Aguachica">Aguachica</option>
+          <option value="Aguada">Aguada</option>
+          <option value="Aguadas">Aguadas</option>
+          <option value="Aguazul">Aguazul</option>
+          <option value="Agustín Codazzi">Agustín Codazzi</option>
+          <option value="Aipe">Aipe</option>
+          <option value="Albán">Albán</option>
+          <option value="Albán">Albán</option>
+          <option value="Albania">Albania</option>
+          <option value="Alcalá">Alcalá</option>
+          <option value="Aldana">Aldana</option>
+          <option value="Alejandría">Alejandría</option>
+          <option value="Algarrobo">Algarrobo</option>
+          <option value="Algeciras">Algeciras</option>
+          <option value="Almaguer">Almaguer</option>
+          <option value="Almeida">Almeida</option>
+          <option value="Alpujarra">Alpujarra</option>
+          <option value="Altamira">Altamira</option>
+          <option value="Alto Baudo">Alto Baudo</option>
+          <option value="Altos del Rosario">Altos del Rosario</option>
+          <option value="Alvarado">Alvarado</option>
+          <option value="Amagá">Amagá</option>
+          <option value="Amalfi">Amalfi</option>
+          <option value="Ambalema">Ambalema</option>
+          <option value="Anapoima">Anapoima</option>
+          <option value="Ancuyá">Ancuyá</option>
+          <option value="Andalucía">Andalucía</option>
+          <option value="Andes">Andes</option>
+          <option value="Angelópolis">Angelópolis</option>
+          <option value="Angostura">Angostura</option>
+          <option value="Anolaima">Anolaima</option>
+          <option value="Anorí">Anorí</option>
+          <option value="Anserma">Anserma</option>
+          <option value="Ansermanuevo">Ansermanuevo</option>
+          <option value="Anza">Anza</option>
+          <option value="Anzoátegui">Anzoátegui</option>
+          <option value="Apartadó">Apartadó</option>
+          <option value="Apía">Apía</option>
+          <option value="Apulo">Apulo</option>
+          <option value="Aquitania">Aquitania</option>
+          <option value="Aracataca">Aracataca</option>
+          <option value="Aranzazu">Aranzazu</option>
+          <option value="Aratoca">Aratoca</option>
+          <option value="Arauca">Arauca</option>
+          <option value="Arauquita">Arauquita</option>
+          <option value="Arbeláez">Arbeláez</option>
+          <option value="Arboleda">Arboleda</option>
+          <option value="Arboledas">Arboledas</option>
+          <option value="Arboletes">Arboletes</option>
+          <option value="Arcabuco">Arcabuco</option>
+          <option value="Arenal">Arenal</option>
+          <option value="Argelia">Argelia</option>
+          <option value="Ariguaní">Ariguaní</option>
+          <option value="Arjona">Arjona</option>
+          <option value="Armenia">Armenia</option>
+          <option value="Armero">Armero</option>
+          <option value="Arroyohondo">Arroyohondo</option>
+          <option value="Astrea">Astrea</option>
+          <option value="Ataco">Ataco</option>
+          <option value="Atrato">Atrato</option>
+          <option value="Ayapel">Ayapel</option>
+          <option value="Bagadó">Bagadó</option>
+          <option value="Bahía Solano">Bahía Solano</option>
+          <option value="Bajo Baudó">Bajo Baudó</option>
+          <option value="Balboa">Balboa</option>
+          <option value="Baranoa">Baranoa</option>
+          <option value="Baraya">Baraya</option>
+          <option value="Barbacoas">Barbacoas</option>
+          <option value="Barbosa">Barbosa</option>
+          <option value="Barichara">Barichara</option>
+          <option value="Barranca de Upía">Barranca de Upía</option>
+          <option value="Barrancabermeja">Barrancabermeja</option>
+          <option value="Barrancas">Barrancas</option>
+          <option value="Barranco de Loba">Barranco de Loba</option>
+          <option value="Barranco Minas">Barranco Minas</option>
+          <option value="Barranquilla">Barranquilla</option>
+          <option value="Becerril">Becerril</option>
+          <option value="Belalcázar">Belalcázar</option>
+          <option value="Belén">Belén</option>
+          <option value="Belén de Bajirá">Belén de Bajirá</option>
+          <option value="Belén de Los Andaquies">Belén de Los Andaquies</option>
+          <option value="Belén de Umbría">Belén de Umbría</option>
+          <option value="Bello">Bello</option>
+          <option value="Belmira">Belmira</option>
+          <option value="Beltrán">Beltrán</option>
+          <option value="Berbeo">Berbeo</option>
+          <option value="Betania">Betania</option>
+          <option value="Betéitiva">Betéitiva</option>
+          <option value="Betulia">Betulia</option>
+          <option value="Bituima">Bituima</option>
+          <option value="Boavita">Boavita</option>
+          <option value="Bochalema">Bochalema</option>
+          <option value="Bogotá">Bogotá</option>
+          <option value="Bojacá">Bojacá</option>
+          <option value="Bojaya">Bojaya</option>
+          <option value="Bolívar">Bolívar</option>
+          <option value="Bosconia">Bosconia</option>
+          <option value="Boyacá">Boyacá</option>
+          <option value="Briceño">Briceño</option>
+          <option value="Briceño">Briceño</option>
+          <option value="Bucaramanga">Bucaramanga</option>
+          <option value="Bucarasica">Bucarasica</option>
+          <option value="Buenaventura">Buenaventura</option>
+          <option value="Buenavista">Buenavista</option>
+          <option value="Buenos Aires">Buenos Aires</option>
+          <option value="Buesaco">Buesaco</option>
+          <option value="Buga">Buga</option>
+          <option value="Bugalagrande">Bugalagrande</option>
+          <option value="Buriticá">Buriticá</option>
+          <option value="Busbanzá">Busbanzá</option>
+          <option value="Cabrera">Cabrera</option>
+          <option value="Cabrera">Cabrera</option>
+          <option value="Cabuyaro">Cabuyaro</option>
+          <option value="Cacahual">Cacahual</option>
+          <option value="Cáceres">Cáceres</option>
+          <option value="Cachipay">Cachipay</option>
+          <option value="Cachirá">Cachirá</option>
+          <option value="Cácota">Cácota</option>
+          <option value="Caicedo">Caicedo</option>
+          <option value="Caicedonia">Caicedonia</option>
+          <option value="Caimito">Caimito</option>
+          <option value="Cajamarca">Cajamarca</option>
+          <option value="Cajibío">Cajibío</option>
+          <option value="Cajicá">Cajicá</option>
+          <option value="Calamar">Calamar</option>
+          <option value="Calarca">Calarca</option>
+          <option value="Caldas">Caldas</option>
+          <option value="Caldas">Caldas</option>
+          <option value="Caldono">Caldono</option>
+          <option value="Cali">Cali</option>
+          <option value="California">California</option>
+          <option value="Calima">Calima</option>
+          <option value="Caloto">Caloto</option>
+          <option value="Campamento">Campamento</option>
+          <option value="Campo de la Cruz">Campo de la Cruz</option>
+          <option value="Campoalegre">Campoalegre</option>
+          <option value="Campohermoso">Campohermoso</option>
+          <option value="Canalete">Canalete</option>
+          <option value="Cañasgordas">Cañasgordas</option>
+          <option value="Candelaria">Candelaria</option>
+          <option value="Candelaria">Candelaria</option>
+          <option value="Cantagallo">Cantagallo</option>
+          <option value="Caparrapí">Caparrapí</option>
+          <option value="Capitanejo">Capitanejo</option>
+          <option value="Caqueza">Caqueza</option>
+          <option value="Caracolí">Caracolí</option>
+          <option value="Caramanta">Caramanta</option>
+          <option value="Carcasí">Carcasí</option>
+          <option value="Carepa">Carepa</option>
+          <option value="Carmen de Apicalá">Carmen de Apicalá</option>
+          <option value="Carmen de Carupa">Carmen de Carupa</option>
+          <option value="Carmen del Darien">Carmen del Darien</option>
+          <option value="Carolina">Carolina</option>
+          <option value="Cartagena">Cartagena</option>
+          <option value="Cartagena del Chairá">Cartagena del Chairá</option>
+          <option value="Cartago">Cartago</option>
+          <option value="Caruru">Caruru</option>
+          <option value="Casabianca">Casabianca</option>
+          <option value="Castilla La Nueva">Castilla La Nueva</option>
+          <option value="Caucasia">Caucasia</option>
+          <option value="Cepitá">Cepitá</option>
+          <option value="Cereté">Cereté</option>
+          <option value="Cerinza">Cerinza</option>
+          <option value="Cerrito">Cerrito</option>
+          <option value="Cerro San Antonio">Cerro San Antonio</option>
+          <option value="Cértegui">Cértegui</option>
+          <option value="Chachagüí">Chachagüí</option>
+          <option value="Chaguaní">Chaguaní</option>
+          <option value="Chalán">Chalán</option>
+          <option value="Chameza">Chameza</option>
+          <option value="Chaparral">Chaparral</option>
+          <option value="Charalá">Charalá</option>
+          <option value="Charta">Charta</option>
+          <option value="Chía">Chía</option>
+          <option value="Chibolo">Chibolo</option>
+          <option value="Chigorodó">Chigorodó</option>
+          <option value="Chima">Chima</option>
+          <option value="Chimá">Chimá</option>
+          <option value="Chimichagua">Chimichagua</option>
+          <option value="Chinácota">Chinácota</option>
+          <option value="Chinchiná">Chinchiná</option>
+          <option value="Chinú">Chinú</option>
+          <option value="Chipaque">Chipaque</option>
+          <option value="Chipatá">Chipatá</option>
+          <option value="Chiquinquirá">Chiquinquirá</option>
+          <option value="Chíquiza">Chíquiza</option>
+          <option value="Chiriguaná">Chiriguaná</option>
+          <option value="Chiscas">Chiscas</option>
+          <option value="Chita">Chita</option>
+          <option value="Chitagá">Chitagá</option>
+          <option value="Chitaraque">Chitaraque</option>
+          <option value="Chivatá">Chivatá</option>
+          <option value="Chivor">Chivor</option>
+          <option value="Choachí">Choachí</option>
+          <option value="Chocontá">Chocontá</option>
+          <option value="Cicuco">Cicuco</option>
+          <option value="Ciénaga">Ciénaga</option>
+          <option value="Ciénaga de Oro">Ciénaga de Oro</option>
+          <option value="Ciénega">Ciénega</option>
+          <option value="Cimitarra">Cimitarra</option>
+          <option value="Circasia">Circasia</option>
+          <option value="Cisneros">Cisneros</option>
+          <option value="Ciudad Bolívar">Ciudad Bolívar</option>
+          <option value="Clemencia">Clemencia</option>
+          <option value="Cocorná">Cocorná</option>
+          <option value="Coello">Coello</option>
+          <option value="Cogua">Cogua</option>
+          <option value="Colombia">Colombia</option>
+          <option value="Colón">Colón</option>
+          <option value="Coloso">Coloso</option>
+          <option value="Cómbita">Cómbita</option>
+          <option value="Concepción">Concepción</option>
+          <option value="Concordia">Concordia</option>
+          <option value="Condoto">Condoto</option>
+          <option value="Confines">Confines</option>
+          <option value="Consaca">Consaca</option>
+          <option value="Contadero">Contadero</option>
+          <option value="Contratación">Contratación</option>
+          <option value="Convención">Convención</option>
+          <option value="Copacabana">Copacabana</option>
+          <option value="Coper">Coper</option>
+          <option value="Córdoba">Córdoba</option>
+          <option value="Corinto">Corinto</option>
+          <option value="Coromoro">Coromoro</option>
+          <option value="Corozal">Corozal</option>
+          <option value="Corrales">Corrales</option>
+          <option value="Cota">Cota</option>
+          <option value="Cotorra">Cotorra</option>
+          <option value="Covarachía">Covarachía</option>
+          <option value="Coveñas">Coveñas</option>
+          <option value="Coyaima">Coyaima</option>
+          <option value="Cravo Norte">Cravo Norte</option>
+          <option value="Cuaspud">Cuaspud</option>
+          <option value="Cubará">Cubará</option>
+          <option value="Cubarral">Cubarral</option>
+          <option value="Cucaita">Cucaita</option>
+          <option value="Cucunubá">Cucunubá</option>
+          <option value="Cúcuta">Cúcuta</option>
+          <option value="Cucutilla">Cucutilla</option>
                                             <option value="Cuítiva">Cuítiva</option>
                                             <option value="Cumaral">Cumaral</option>
                                             <option value="Cumaribo">Cumaribo</option>
@@ -1121,13 +1085,80 @@
         </select>
     </div>
 
-
     <div class="col-12 botones">
-        <button class="btn btn-outline-success" type="submit" id="btnCrearEstacion" name="btnCrearEstacion">CREAR</button>
-        <button class="btn btn-outline-success" type="submit" id="btnActualizarEstacacion" name="btnActualizarEstacacion">ACTUALIZAR</button>
-        <button class="btn btn-outline-success" type="submit" id="btnBuscarEstacion" name="btnBuscarEstacion">BUSCAR</button>
-        <button class="btn btn-outline-success" type="submit" id="btnBorrarEstacion" name="btnBorrarEstacion">ELIMINAR</button>
-        <button class="btn btn-outline-success" type="reset">LIMPIAR</button>
-        <a class="btn btn-outline-success" href="/Index" role="button">VOLVER A INICIO</a>
+      <button class="btn btn-outline-success" type="submit" asp-page-handler="CrearEstacion">CREAR ESTACION</button>
     </div>
-</form>
+  </form>
+</div>
+<br><br>
+<div class="container bloque bloque_list">  
+  <form method="POST" class="row g-3 formularioDatos">
+    <h3 class="display-6">Técnico</h1><br>
+    <div class="col-md-4">
+        <label for="AddAdminNombreTec" class="form-label">Nombre(s)</label>
+        <input type="text" class="form-control" id="AddAdminNombreTec" asp-for="@Model.tecnico.Nombres" required>
+    </div>
+    <div class="col-md-4">
+        <label for="AddAdminApellidoTec" class="form-label">Apellido(s)</label>
+        <input type="text" class="form-control" id="AddAdminApellidoTec" asp-for="@Model.tecnico.Apellidos" required>
+    </div>
+    <div class="col-md-4">
+        <label for="AddAdminIdentificacionTec" class="form-label">Número Identificación</label>
+        <input type="text" class="form-control" id="AddAdminIdentificacionTec" asp-for="@Model.tecnico.Identificacion" required>
+    </div>
+    <!--
+    <div class="col-md-8">
+        <label for="Correo" class="form-label">Correo Electrónico</label>
+        <input type="email" class="form-control" id="Correo" name="Correo" aria-describedby="emailHelp"
+            required>
+        <div id="emailHelp" class="form-text">Nunca compartiremos su correo electrónico con nadie más.</div>
+    </div>
+    -->
+    
+    <div class="col-md-4">
+        <label for="Genero" class="form-label">Genero</label>
+        <select class="form-select" id="Genero" asp-for="@Model.tecnico.Genero" required>
+            <option selected disabled value="">Seleccionar...</option>
+            <option value="Femenino">Femenino</option>
+            <option value="Masculino">Masculino</option>
+            <option value="Otro">Otro</option>
+        </select>
+    </div>
+    <!--
+    <div class="col-md-4">
+        <label for="FechaIngreso" class="form-label">Fecha de Ingreso</label>
+        <input type="date" class="form-control" id="FechaIngreso" name="FechaIngreso" required>
+    </div>
+    <div class="col-md-4 oculto">
+        <label for="Cargo" class="form-label">Cargo</label>
+        <input type="text" class="form-control" id="Cargo" name="Cargo" required>
+    </div>
+    <div class="col-md-4 oculto">
+        <label for="Turno" class="form-label">Turno</label>
+        <select class="form-select" id="Turno" name="Turno" required>
+            <option selected disabled value="">Seleccionar...</option>
+            <option value="Turno 1">Turno 1</option>
+            <option value="Turno 2">Turno 2</option>
+            <option value="Turno 3">Turno 3</option>
+        </select>
+    </div>
+    -->
+    <div class="col-md-4">
+        <label for="AddAdminEstadoTecnico" class="form-label">Estado</label>
+        <select class="form-select" id="AddAdminEstadoTecnico" asp-for="@Model.tecnico.Estado" required>
+            <option selected disabled value="">Seleccionar...</option>
+            <option value="A">Activo</option>
+            <option value="I">Inactivo</option>
+            <option value="C">Cesante</option>
+        </select>
+    </div>
+    <div class="col-md-4">
+        <label for="AddAdminTarjeta" class="form-label">ID</label>
+        <input type="text" class="form-control" id="AddAdminTarjeta" asp-for="@Model.tecnico.TarjetaProfesional" required>
+    </div>
+    
+    <div class="col-12 botones">
+      <button class="btn btn-outline-success" type="submit" asp-page-handler="CrearTecnico">CREAR TÉCNICO</button>
+    </div>
+  </form>
+</div>

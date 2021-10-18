@@ -12,6 +12,7 @@ namespace Aplicacion.App.Persistencia
         public DbSet<PersonalInstituto> PersonalClima { get; set; }
         public DbSet<Administrador> Administradores { get; set; }
         public DbSet<DatoMeteorologico> DatosMeteorologicos { get; set; }
+        public DbSet<PersonalSeguridad> PerSeg { get; set; }
         public DbSet<Reporte> Reportes { get; set; }
         public DbSet<TipoReporte> TiposReporte { get; set; }
         public DbSet<Validacion> Validaciones { get; set; }

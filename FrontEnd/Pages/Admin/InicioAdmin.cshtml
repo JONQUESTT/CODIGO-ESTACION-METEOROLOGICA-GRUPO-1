@@ -1,0 +1,26 @@
+﻿@page
+@model FrontEnd.Pages.InicioAdminModel
+@{
+}
+<h1 class="display-6 encabezado">ADMINISTRADOR</h1><br>
+<div class="container bloque bloque_list">
+    <form class="d-flex row g-2 col-md-5 " method="POST">
+        <div class="row">
+            <label for="InicioAdminIdentificacion" class="form-label col-md-4 ">IDENTIFICACION </label>
+            <input class="col-md-8 " asp-for="@Model.administrador.Identificacion" id="InicioAdminIdentificacion"
+                placeholder="Identificacion">
+        </div>
+        <div></div>
+        <div class="row">
+            <label for="InicioAdminPassword" class="form-label col-md-4">CONTRASEÑA</label>
+            <input class="col-md-8 " asp-for="@Model.administrador.Password" id="InicioAdminPassword"
+                placeholder="contraseña">
+        </div>
+        <div></div>
+        <h3  class="display-6">@Model.nombre</h1>
+        <div class="row">
+            <div class="col-md-1"></div>
+            <input class="col-md-2" type="submit" value="crear" asp-page-handler="Ingresar">
+        </div>
+    </form>
+</div>

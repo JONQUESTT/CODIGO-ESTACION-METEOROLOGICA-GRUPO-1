@@ -1,6 +1,5 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -21,32 +20,29 @@
             <h1 class="display-1">CENTRAL METEOROLOGÍCA</h1>
             <h1 class="display-5">GRUPO 17 - EQUIPO 1</h1>
         </HGROUP>
+        
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">Menú</a>
+            <div class="container-fluid">                
+                <a class="navbar-brand" asp-area="" asp-page="/Index">Menú</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="collapse navbar-collapse">                    
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            <a class="nav-link dropdown-toggle" href="#" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 Administracion
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="/Estacion/EstacionMet">Estaciones Meteorologicas</a>
-                                </li>
-                                <li><a class="dropdown-item" href="/Admin/AdminPerSeg">Personal de seguridad</a></li>
-                                <li><a class="dropdown-item" href="/Admin/AdminTecnico">Técnicos Mantenimiento</a></li>
-                                <li><a class="dropdown-item" href="/Admin/Usuarios">Usuarios</a></li>
+                                <li><a class="dropdown-item" asp-area="" asp-page="/PageAdmin/InicioAdmin">Inicio Admin</a></li>
                             </ul>
                         </li>
-
+                        <!--
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            <a class="nav-link dropdown-toggle" href="#" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 Registro de Actividades
                             </a>
@@ -56,33 +52,30 @@
                                 <li><a class="dropdown-item" href="/Mantenimiento/MantCorrec">Mantenimiento
                                         Correctivo</a></li>
                                 <li><a class="dropdown-item" href="/Estacion/Montaje">Montaje</a></li>
+                                
                             </ul>
                         </li>
-
+                        -->
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            <a class="nav-link dropdown-toggle" href="#" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 Reportes
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" asp-area="" asp-page="/PageReportes/InicioReporte">Inicio Reporte</a></li>
+                                <!--
                                 <li><a class="dropdown-item" href="/Reportes/ReporteMto">Mantenimiento</a></li>
                                 <li><a class="dropdown-item" href="/Reportes/ReporteMontaje">Montaje</a></li>
                                 <li><a class="dropdown-item" href="/Reportes/ReporteDiario">Reporte Diario</a></li>
+                                -->
                             </ul>
                         </li>
+                        <!--
                         <li class="nav-item">
                             <a class="nav-link" href="/Admin/Usuarios">Crear Usuario</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/Index">INICIO</a>
-                        </li>
+                        -->
                     </ul>
-                    <!--
-                    <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
-                        <button class="btn btn-outline-success" type="submit">BUSCAR</button>
-                    </form>
-                    -->
                 </div>
             </div>
         </nav>
@@ -95,7 +88,7 @@
     </div>
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2021 - FrontEnd - <a asp-area="" asp-page="/Privacy">Privacy</a>
+            &copy; 2021 - MonitoreoMeteorologico.App.FrontEnd - <a asp-area="" asp-page="/Privacy">Privacy</a>
         </div>
     </footer>
 
@@ -105,5 +98,4 @@
 
     @RenderSection("Scripts", required: false)
 </body>
-
 </html>
